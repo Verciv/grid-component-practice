@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Karla';
+    src: url(./fonts/Karla-VariableFont_wght.ttf);
+}
+
+@media only screen and (max-width: 375px){
+    .top-div {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+    .left-div {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .right-div {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+@MEDIA only screen and (min-width: 376px){
+    .top-div {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+    .left-div {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .right-div {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+body {
+    background-color: hsl(217, 100%, 83%);
+}
+.wrap-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto; 
+    width: 50%;
+}
+
+
+.top-div {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    justify-content: space-evenly;
+    
+}
+.heading-one {
+    color: hsl(179, 62%, 43%);
+    font-family: Karla;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subheading-one {
+    color: hsl(71, 73%, 54%);
+    font-family: Karla;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraph-one {
+    color: hsl(218, 22%, 67%);
+    font-family: Karla;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-div {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: space-evenly;
+}
+
+.heading-two {
+    color: hsl(0, 0%, 100%);
+    font-family: Karla;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subheading-two {
+    color: hsl(0, 0%, 100%);
+    font-family: Karla;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraph-two {
+    color:hsl(0, 0%, 100%);
+    font-family: Karla;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.augment {
+    font-size: 24px;
+}
+
+.diminish {
+    color: hsl(218, 22%, 67%);
+    font-size: 12px;
+}
+
+.button-one {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    width: 75%;
+}
+
+.right-div {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-right-radius: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.heading-three {
+    color: hsl(0, 0%, 100%);
+    font-family: Karla;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.list-data {
+    color: hsl(0, 0%, 100%);
+    font-family: Karla;
+    font-size: 16px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.attribution { 
+    font-family: Karla;
+    font-size: 12px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
