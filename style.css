@@ -1,30 +1,81 @@
+/* Import Karla font */
 @font-face {
     font-family: 'Karla';
     src: url(./fonts/Karla-VariableFont_wght.ttf);
 }
 
-@media only screen and (max-width: 375px){
+/* Adjusts grid position on phones */
+@media only screen and (max-width: 400px){
+    .wrap-div {
+        width: 100%;
+    }
+
     .top-div {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 0;
         grid-row-end: 1;
     }
+
     .left-div {
+        border-bottom-left-radius: 0px;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
+
     .right-div {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
     }
+
+    .button-one {
+        margin-bottom: 10%;
+    }
 }
 
-@MEDIA only screen and (min-width: 376px){
+/* Adjusts grid position on tablets and laptops */
+@media only screen and (min-width: 401px) and (max-width: 1366px) {
+    .wrap-div {
+        width: 50%;
+    }
+    .top-div {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+    .left-div {
+        border-bottom-left-radius: 20px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .right-div {
+        border-bottom-right-radius: 20px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+/* Adjusts grid position on desktops/large monitors */
+@media only screen and (min-width: 1367px) {
+    .wrap-div {
+        width: 50%;
+    }
+
     .top-div {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -38,22 +89,29 @@
         grid-row-end: 2;
     }
     .right-div {
-        grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
 }
 
 body {
-    background-color: hsl(217, 100%, 83%);
+    background-color: hsl(217, 100%, 83%); /* Adjusts background color of webpage */
 }
+
+ul {
+    padding-inline-start: 5%; /* Sets indentation for lists */
+}
+
+/* Wrap-around div */
 .wrap-div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: auto;
-    margin-right: auto; 
-    width: 50%;
+    display: grid; /* Adjusts webpage display */
+    grid-template-columns: repeat(2, 1fr); /* Adjusts number of columns/spacing */
+    margin-bottom: 10%; /* Adjusts bottom margin of div */
+    margin-left: auto; /* Adjusts left margin of div */
+    margin-right: auto; /* Adjusts right margin of div */
+    margin-top: 10%; /* Adjusts top margin of div */
 }
 
 
@@ -62,10 +120,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 0;
-    grid-row-end: 1;
     justify-content: space-evenly;
     
 }
@@ -73,7 +127,7 @@ body {
     color: hsl(179, 62%, 43%);
     font-family: Karla;
     font-size: 20px;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
 }
 
@@ -81,28 +135,26 @@ body {
     color: hsl(71, 73%, 54%);
     font-family: Karla;
     font-size: 16px;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
+    margin-top: 1%;
 }
 
 .paragraph-one {
     color: hsl(218, 22%, 67%);
     font-family: Karla;
     font-size: 16px;
-    margin-left: auto;
+    margin-bottom: 1%;
+    margin-left: 5%;
     margin-right: auto;
+    margin-top: 0%;
 }
 
 .left-div {
     background-color: hsl(179, 62%, 43%);
-    border-bottom-left-radius: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
     justify-content: space-evenly;
 }
 
@@ -110,7 +162,7 @@ body {
     color: hsl(0, 0%, 100%);
     font-family: Karla;
     font-size: 18px;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
 }
 
@@ -118,7 +170,7 @@ body {
     color: hsl(0, 0%, 100%);
     font-family: Karla;
     font-size: 16px;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
 }
 
@@ -126,7 +178,7 @@ body {
     color:hsl(0, 0%, 100%);
     font-family: Karla;
     font-size: 16px;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
 }
 
@@ -135,34 +187,32 @@ body {
 }
 
 .diminish {
-    color: hsl(218, 22%, 67%);
+    color: hsl(204, 43%, 93%);
     font-size: 12px;
 }
 
 .button-one {
     background-color: hsl(71, 73%, 54%);
     border-radius: 15px;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
-    padding: 15px;
+    padding: 5%;
     text-align: center;
     width: 75%;
 }
 
 .right-div {
-    background-color: hsl(179, 62%, 43%);
+    background-color: hsl(179, 61%, 49%);
     border-bottom-right-radius: 20px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
+
 .heading-three {
     color: hsl(0, 0%, 100%);
     font-family: Karla;
     font-size: 18px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 5%;
     text-align: left;
 }
 
@@ -176,10 +226,11 @@ body {
     text-align: left;
 }
 
+/* For footers */
 .attribution { 
     font-family: Karla;
     font-size: 12px;
-    text-align: center;
+    text-align: left;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
