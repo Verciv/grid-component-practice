@@ -53,5 +53,5 @@ I would like to add a better way for responsiveness and scalabiliy. If I ever ad
 
 ### Useful resources  
 
-- [Example resource 1](https://www.w3schools.com) - This provided answers when I needed to review some HTML/CSS documentation. It also helped me with determining the numbers to use in the HSL system.  
-- [Example resource 2](https://www.css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is a great source for reviewing flexbox properties.  
+- [w3schools.com](https://www.w3schools.com) - This provided answers when I needed to review some HTML/CSS documentation. It also helped me with determining the numbers to use in the HSL system.  
+- [css-tricks.com](https://www.css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is a great source for reviewing flexbox properties.  
