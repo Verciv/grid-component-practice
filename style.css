@@ -7,6 +7,7 @@
 /* Adjusts grid position on phones */
 @media only screen and (max-width: 400px){
     .wrap-div {
+        height: auto; /* Adjusts height of the whole box */
         width: 100%; /* Adjusts width of the whole box */
     }
 
@@ -44,7 +45,8 @@
 /* Adjusts grid position on tablets and laptops */
 @media only screen and (min-width: 401px) and (max-width: 1366px) {
     .wrap-div {
-        width: 50%; /* Adjusts width of div */
+        height: auto; /* Adjusts height of whole box */
+        width: 50%; /* Adjusts width of whole box */
     }
 
     .top-div {
@@ -76,7 +78,8 @@
 /* Adjusts grid position on desktops/large monitors */
 @media only screen and (min-width: 1367px) {
     .wrap-div {
-        width: 50%; /* Adjusts width of div */
+        height: auto; /* Adjusts height of whole box */
+        width: 50%; /* Adjusts width of whole box */
     }
 
     .top-div {
