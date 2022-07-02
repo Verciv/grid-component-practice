@@ -1,15 +1,14 @@
-# Avoid accidental Sketch file upload 
-###############################################
-## Please do not remove line 5 - thanks! 🙂 ##
-###############################################
-*.sketch
+# Avoid unintentional population of .DS_Store files in repository
+*.DS_Store
 
-# Avoid accidental XD or Figma upload if you convert the design file
-#######################################################
-## Please do not remove lines 11 and 12 - thanks! 🙂 ##
-#######################################################
-*.xd
+# Avoid accidental Figma file uploads
 *.fig
 
-# Avoid your project being littered with annoying .DS_Store files!
-.DS_Store
+#Avoid accidental .git folder uploads
+*.git/
+
+# Avoid accidental Sketch file uploads
+*.sketch
+
+# Avoid accidental XD file uploads
+*.xd
