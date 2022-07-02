@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links  
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)  
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)  
+- Solution URL: [github.com/Verciv/grid-component-practice](https://github.com/Verciv/grid-component-practice)  
+- Live Site URL: [verciv.github.io/grid-component-practice/](https://verciv.github.io/grid-component-practice/)  
 
 ## My process  
 
